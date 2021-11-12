@@ -66,7 +66,7 @@ points:
           mirror:
             row_net: P2
     switch_footprints:
-      extends: matrix
+      $extends: points.zones.matrix
       columns:
         pinky:
           rows:
@@ -113,11 +113,6 @@ points:
             nets:
               from: '!colrow'
               to: '!column_net'
-          alps:
-            type: alps
-            nets:
-              from: '!colrow'
-              to: '!column_net'
           choc:
             type: choc
             nets:
@@ -134,10 +129,6 @@ points:
         mirror:
           footprints: &quad_mirror
             mx:
-              nets:
-                from: '!column_net'
-                to: '!colrow'
-            alps:
               nets:
                 from: '!column_net'
                 to: '!colrow'
@@ -168,7 +159,7 @@ points:
               footprints:
                 diode:
                   anchor:
-                    rotate: 0
+                    rotate: 180
                     shift: [0, 8.25]
       rows:
         thumb:
@@ -177,20 +168,7 @@ points:
             row_net: P19
       key:
         footprints: *quad
-        mirror:
-          footprints: &quad_mirror
-            mx:
-              nets:
-                from: '!column_net'
-                to: '!colrow'
-            alps:
-              nets:
-                from: '!column_net'
-                to: '!colrow'
-            choc:
-              nets:
-                from: '!column_net'
-                to: '!colrow'
+        mirror: *quad_mirror
   rotate: -25
   mirror:
     ref: matrix_inner_top
