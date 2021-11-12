@@ -1,10 +1,9 @@
 {
     "scripts": {
-        "gen": "ergogen --config ./src/balbuzard.yaml",
-        "clean": "rm -rf output/",
+        "gen": "ergogen ./src/balbuzard.yaml",
         "patch-and-gen": "npm run patch-footprints && npm run gen",
-        "clean-patch-and-gen": "npm run clean && npm run patch-footprints && npm run gen",
-        "watch-gen": "watch 'npm run gen' ./src ./footprints",
+        "clean-patch-and-gen": "npm run patch-footprints && npm run gen -- --clean",
+        "watch-gen": "watch 'npm run gen' ./src",
         "watch-patch-and-gen": "watch 'npm run patch-and-gen' ./src ./footprints",
         "watch-clean-patch-and-gen": "watch 'npm run clean-patch-and-gen' ./src ./footprints"
     },
