@@ -104,6 +104,10 @@ points:
               row_net: P18
               mirror:
                 row_net: P4
+      rows:
+        bottom:
+        home:
+        top:
     switch_footprints:
       $extends: points.zones.matrix
       columns:
