@@ -308,7 +308,7 @@ pcbs:
             - matrix_inner_bottom
             - mirror_matrix_inner_bottom
           rotate: 90
-          shift: [-5.75, -20]
+          shift: [-5.75, -20.5]
         nets:
           SDA: P2
           SCL: P3
@@ -318,22 +318,45 @@ pcbs:
           ref:
             - matrix_inner_bottom
             - mirror_matrix_inner_bottom
-          shift: [0, -29]
+          shift: [0, -33.5]
         nets:
+          # TODO: Update the to / from to be included in the matrix
+          # TODO: Possibly add required diode
           to: GND
           from: GND
           A: P21
           B: P0
           C: GND
-
       slider:
         type: slider
         anchor:
           ref:
             - matrix_inner_bottom
             - mirror_matrix_inner_bottom
-          shift: [0, -39]
-          rotate: 180
+          shift: [0, 14]
+        # TODO: Set up connections here
         nets:
           to: GND
           from: GND
+      jst:
+        type: jstph
+        anchor:
+          ref:
+            - matrix_inner_bottom
+            - mirror_matrix_inner_bottom
+          shift: [-2, -23.5]
+          rotate: 90
+        nets:
+          pos: RAW
+          neg: GND
+      reset:
+        type: button
+        anchor:
+          ref:
+            - matrix_inner_bottom
+            - mirror_matrix_inner_bottom
+          shift: [-15, 0]
+          rotate: -115
+        nets:
+          from: RST
+          to: GND
