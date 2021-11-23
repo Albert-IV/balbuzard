@@ -344,8 +344,8 @@ pcbs:
           ref:
             - matrix_inner_bottom
             - mirror_matrix_inner_bottom
-          shift: [-2, -23.5]
-          rotate: 90
+          shift: [14, 2]
+          rotate: 192.5
         nets:
           pos: RAW
           neg: GND
@@ -355,7 +355,7 @@ pcbs:
           ref:
             - matrix_inner_bottom
             - mirror_matrix_inner_bottom
-          shift: [-15, 0]
+          shift: [-14, 5]
           rotate: -115
         nets:
           from: RST
