@@ -166,31 +166,31 @@ points:
           mx:
             type: mx
             nets:
-              from: '!colrow'
-              to: '!column_net'
+              from: =colrow
+              to: =column_net
           choc:
             type: choc
             nets:
-              from: '!colrow'
-              to: '!column_net'
+              from: =colrow
+              to: =column_net
           diode:
             type: diode
             anchor:
               rotate: 90
               shift: [8.25, 0]
             nets:
-              from: '!colrow'
-              to: '!row_net'
+              from: =colrow
+              to: =row_net
         mirror:
           footprints: &quad_mirror
             mx:
               nets:
-                from: '!column_net'
-                to: '!colrow'
+                from: =column_net
+                to: =colrow
             choc:
               nets:
-                from: '!column_net'
-                to: '!colrow'
+                from: =column_net
+                to: =colrow
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
@@ -301,3 +301,39 @@ pcbs:
             - mirror_matrix_inner_bottom
           rotate: 270
           shift: [0, -2]
+      oled:
+        type: oled
+        anchor:
+          ref:
+            - matrix_inner_bottom
+            - mirror_matrix_inner_bottom
+          rotate: 90
+          shift: [-5.75, -20]
+        nets:
+          SDA: P2
+          SCL: P3
+      rotary:
+        type: rotary
+        anchor:
+          ref:
+            - matrix_inner_bottom
+            - mirror_matrix_inner_bottom
+          shift: [0, -29]
+        nets:
+          to: GND
+          from: GND
+          A: P21
+          B: P0
+          C: GND
+
+      slider:
+        type: slider
+        anchor:
+          ref:
+            - matrix_inner_bottom
+            - mirror_matrix_inner_bottom
+          shift: [0, -39]
+          rotate: 180
+        nets:
+          to: GND
+          from: GND

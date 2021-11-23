@@ -1,6 +1,7 @@
 {
     "scripts": {
         "gen": "ergogen ./src/balbuzard.yaml",
+        "patch-footprints": "cp ./footprints/* ./node_modules/ergogen/src/footprints/ ",
         "patch-and-gen": "npm run patch-footprints && npm run gen",
         "clean-patch-and-gen": "npm run patch-footprints && npm run gen -- --clean",
         "watch-gen": "watch 'npm run gen' ./src",
