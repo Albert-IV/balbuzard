@@ -221,7 +221,17 @@ points:
                     shift: [0, 8.25]
       key:
         footprints: *quad
-        mirror: *quad_mirror
+        mirror:
+          footprints: 
+            <<: *quad_mirror
+            mx:
+              nets:
+                from: =column_net
+                to: =colrow
+            choc:
+              nets:
+                from: =column_net
+                to: =colrow
   rotate: -25
   mirror:
     ref: matrix_inner_top
