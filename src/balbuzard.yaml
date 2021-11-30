@@ -282,7 +282,7 @@ outlines:
         size: [14.4, 14.4] # MX switch dimensions
         bound: false
 pcbs:
-  main:
+  balbuzard:
     outlines:
       main:
         outline: _pcb_edge
