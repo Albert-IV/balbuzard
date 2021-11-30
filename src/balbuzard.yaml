@@ -149,18 +149,12 @@ points:
                 diode:
                   anchor:
                     shift: [,-4]
-                  # nets:
-                  #   to: P10
             home:
               footprints:
                 diode:
-                  # nets:
-                  #   to: P10
             bottom:
               footprints:
                 diode:
-                  # nets:
-                  #   to: P10
       key:
         footprints: &quad
           mx:
@@ -312,6 +306,17 @@ pcbs:
         nets:
           SDA: P2
           SCL: P3
+
+      diode:
+        type: diode
+        anchor:
+          ref:
+            - matrix_inner_bottom
+            - mirror_matrix_inner_bottom
+          shift: [0, -25]
+        nets:
+          from: rotary_diode
+          to: P15
       rotary:
         type: rotary
         anchor:
@@ -320,10 +325,8 @@ pcbs:
             - mirror_matrix_inner_bottom
           shift: [0, -33.5]
         nets:
-          # TODO: Update the to / from to be included in the matrix
-          # TODO: Possibly add required diode
-          to: GND
-          from: GND
+          to: P14
+          from: rotary_diode
           A: P21
           B: P0
           C: GND
@@ -334,29 +337,55 @@ pcbs:
             - matrix_inner_bottom
             - mirror_matrix_inner_bottom
           shift: [0, 14]
-        # TODO: Set up connections here
         nets:
           to: GND
-          from: GND
+          from: slider_positive
       jst:
         type: jstph
         anchor:
           ref:
             - matrix_inner_bottom
             - mirror_matrix_inner_bottom
-          shift: [14, 2]
+          shift: [16, -3]
           rotate: 192.5
         nets:
           pos: RAW
-          neg: GND
+          neg: slider_positive
       reset:
         type: button
         anchor:
           ref:
             - matrix_inner_bottom
             - mirror_matrix_inner_bottom
-          shift: [-14, 5]
+          shift: [-15, 0]
           rotate: -115
         nets:
           from: RST
           to: GND
+
+      mounting_inner: &mounting_inner
+        type: mountinghole
+        anchor: 
+          ref: matrix_inner_top
+          shift: [-9.5, -9.5]
+      mounting_inner_mirror:
+        <<: *mounting_inner
+        anchor.ref: mirror_matrix_inner_top
+
+      mounting_pinky: &mounting_pinky
+        type: mountinghole
+        anchor: 
+          ref: matrix_pinky_home
+          shift: [9.5, 11]
+      mounting_pinky_mirror:
+        <<: *mounting_pinky
+        anchor.ref: mirror_matrix_pinky_home
+
+      mounting_thumb: &mounting_thumb
+        type: mountinghole
+        anchor: 
+          ref: thumbfan_home_thumb
+          shift: [-9.5, 9.5]
+      mounting_thumb_mirror:
+        <<: *mounting_thumb
+        anchor.ref: mirror_thumbfan_home_thumb
