@@ -23,3 +23,11 @@ Find the generated PCB at `output/pcbs/main.kicad_pcb`.
 My keymap looks like this. The colors indicate which finger I use to hit each key.
 
 ![example keymap](images/layout.png)
+
+## Rev 1.
+
+* Ergogen config upgraded to latest 3.0.0
+* Column layout tweaked, ready for routuing
+* Each key / diode is routed.  Next is to route columns and rows (AKA the hard part)
+    **Note:** If there is a Rev 2. you will need to rotate the left side buttom-most thumb key's diode.  Rotated manually in Kicad to make it easier to route without routing on the back side.
+
