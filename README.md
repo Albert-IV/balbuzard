@@ -30,4 +30,4 @@ My keymap looks like this. The colors indicate which finger I use to hit each ke
 * Column layout tweaked, ready for routuing
 * Each key / diode is routed.  Next is to route columns and rows (AKA the hard part)
     **Note:** If there is a Rev 2. you will need to rotate the left side buttom-most thumb key's diode.  Rotated manually in Kicad to make it easier to route without routing on the back side.
-
+* Removed routing done since I've found a way in Kicad to make direct connections (which will make the key routing cleaner looking)
