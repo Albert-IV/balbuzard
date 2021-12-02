@@ -1,0 +1,83 @@
+
+(rules PCB balbuzard
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 6)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.5)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "pinky_bottom" P9 P18 "pinky_home" P19 "pinky_top" P20 "ring_bottom"
+    P10 "ring_home" "ring_top" "middle_bottom" P8 "middle_home" "middle_top" "index_bottom"
+    P16 "index_home" "index_top" "inner_bottom" P7 "inner_home" "inner_top" "near_thumb"
+    P14 "home_thumb" "far_thumb" "mirror_pinky_bottom" P4 "mirror_pinky_home" P5 "mirror_pinky_top"
+    P6 "mirror_ring_bottom" "mirror_ring_home" "mirror_ring_top" "mirror_middle_bottom" "mirror_middle_home" "mirror_middle_top" "mirror_index_bottom"
+    "mirror_index_home" "mirror_index_top" "mirror_inner_bottom" "mirror_inner_home" "mirror_inner_top" "mirror_near_thumb" "mirror_home_thumb" "mirror_far_thumb"
+    RAW GND RST VCC P21 P15 P1 P0
+    P2 P3 "rotary_diode" "slider_positive"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
