@@ -32,5 +32,21 @@ My keymap looks like this. The colors indicate which finger I use to hit each ke
 * Removed routing done since I've found a way in Kicad to make direct connections (which will make the key routing cleaner looking)
 * Redid the key / diode routing to use straight tracks wherever I could. 
 * Just went ahead and used [an autorouter called Freerouter.](https://github.com/freerouting/freerouting/)
+* After much gnashing of teeth, I have the scales SVG working.  Now to add to the front / back of PCB.
+
+Front SVG Export:
+Edge.Cuts
+F.Silkscreen
+F.Mask
+
+Back SVG Export:
+Edge.Cuts
+B.Silkscreen
+B.Mask
+
+# TODO
+
+* Add Balbuzard silkscreen on the front of the PCB
+* Add something to the back of the PCB?  Thinking maybe a pattern like this: https://pattern.monster/scales-3/
 
 **Note:** If there is a Rev 2. you will need to rotate the left side buttom-most thumb key's diode.  Rotated manually in Kicad to make it easier to route without routing on the back side.
