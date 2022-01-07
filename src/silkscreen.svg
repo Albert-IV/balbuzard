@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="25.204420cm"
    height="12.618720cm"
    viewBox="0 0 99230 49680"
    id="svg418"
    sodipodi:docname="silkscreen.svg"
-   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    inkscape:label="Layer 1"
    inkscape:export-filename="/Users/tombrow/Documents/ergogen/artwork.png"
    inkscape:export-xdpi="300"
-   inkscape:export-ydpi="300">
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata424">
     <rdf:RDF>
@@ -45,16 +45,16 @@
   </defs>
   <sodipodi:namedview
      inkscape:current-layer="g940"
-     inkscape:window-maximized="0"
-     inkscape:window-y="23"
-     inkscape:window-x="0"
-     inkscape:cy="184.62509"
-     inkscape:cx="436.81753"
-     inkscape:zoom="0.81275101"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-11"
+     inkscape:window-x="-11"
+     inkscape:cy="222.85423"
+     inkscape:cx="545.21618"
+     inkscape:zoom="6.5020081"
      showgrid="false"
      id="namedview420"
-     inkscape:window-height="855"
-     inkscape:window-width="1440"
+     inkscape:window-height="2080"
+     inkscape:window-width="3840"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      guidetolerance="10"
@@ -63,7 +63,9 @@
      borderopacity="1"
      bordercolor="#666666"
      pagecolor="#ffffff"
-     inkscape:document-rotation="0" />
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="cm" />
   <title
      id="title10">SVG Picture created as main-Edge_Cuts.svg date 2020/11/14 19:29:09 </title>
   <desc
@@ -5258,8 +5260,8 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:694.444px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:104.167"
-       x="54437.258"
-       y="52639.863"
+       x="47299.406"
+       y="52670.035"
        id="text19636"
        inkscape:label="tombrow.com"
        transform="rotate(-25)"
@@ -5267,11 +5269,26 @@
        inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
          id="tspan19634"
-         x="54437.258"
-         y="52639.863"
+         x="47299.406"
+         y="52670.035"
+         style="font-size:694.444px;stroke-width:104.167">github.com/Albert_IV</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:694.444px;line-height:1.25;font-family:sans-serif;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:104.167"
+       x="54559.152"
+       y="51284.316"
+       id="text19636-0"
+       inkscape:label="tombrow.com"
+       transform="rotate(-25)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan19634-4"
+         x="54559.152"
+         y="51284.316"
          style="font-size:694.444px;stroke-width:104.167"><tspan
    style="font-size:694.444px;text-align:end;text-anchor:end"
-   id="tspan57913">tombrow</tspan>.com</tspan></text>
+   id="tspan57913-3">tombrow</tspan>.com</tspan></text>
     <text
        id="text19636-7"
        y="10719.551"
@@ -5286,6 +5303,6 @@
          y="10719.551"
          x="35361.871"
          id="tspan19634-1"
-         sodipodi:role="line">balbuzard 0.1</tspan></text>
+         sodipodi:role="line">mx balbuzard rev1</tspan></text>
   </g>
 </svg>
