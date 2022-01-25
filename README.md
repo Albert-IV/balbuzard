@@ -1,6 +1,6 @@
 # Balbuzard
 
-![photo of assembled keyboard](images/assembled.jpg)
+![photo of assembled keyboard](images/MX Balbuzard.JPG)
 
 Balbuzard is a 36-key keyboard with a PCB. This repository contains the [Ergogen](https://github.com/mrzealot/ergogen) configuration that generates the KiCad PCB file.
 
